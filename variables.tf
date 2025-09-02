@@ -7,5 +7,5 @@ variable "aws_region" {
 variable "project" {
   type        = string
   description = "Project name for resource tagging"
-  default     = "Cloud Resume"
+  default     = "Terraform AWS Cloud Resume"
 }
