@@ -13,7 +13,7 @@ variable "project" {
 variable "hosted_zone" {
   type        = string
   description = "Public hosted zone ID"
-  default     = "767397696128.realhandsonlabs.net."
+  default     = "resume.767397696128.realhandsonlabs.net."
 }
 
 variable "domain_name" {
