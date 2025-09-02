@@ -1,5 +1,4 @@
 # DynamoDB Table to store the visitor count
-
 resource "aws_dynamodb_table" "visitor_counts" {
   name         = "PageViews"
   billing_mode = "PAY_PER_REQUEST"
