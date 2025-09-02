@@ -1,4 +1,4 @@
-# API Gateway
+# API Gateway with CORS Fixes
 
 # Create the REST API
 resource "aws_api_gateway_rest_api" "resume_api" {
@@ -30,6 +30,7 @@ resource "aws_api_gateway_method" "post_method" {
 }
 
 # Integration for the GET method with the getVisitorCount Lambda
+# This uses AWS_PROXY, so the Lambda function must return the CORS headers.
 resource "aws_api_gateway_integration" "get_integration" {
   rest_api_id             = aws_api_gateway_rest_api.resume_api.id
   resource_id             = aws_api_gateway_resource.visitors_resource.id
@@ -40,6 +41,7 @@ resource "aws_api_gateway_integration" "get_integration" {
 }
 
 # Integration for the POST method with the incrementVisitorCount Lambda
+# This also uses AWS_PROXY, requiring the Lambda to handle CORS headers.
 resource "aws_api_gateway_integration" "post_integration" {
   rest_api_id             = aws_api_gateway_rest_api.resume_api.id
   resource_id             = aws_api_gateway_resource.visitors_resource.id
@@ -66,7 +68,7 @@ resource "aws_lambda_permission" "allow_apigw_post" {
   source_arn    = "${aws_api_gateway_rest_api.resume_api.execution_arn}/*/*"
 }
 
-# Enable CORS for the API
+# Correctly enable CORS for the API using a MOCK integration for the OPTIONS method
 resource "aws_api_gateway_method" "options_method" {
   rest_api_id   = aws_api_gateway_rest_api.resume_api.id
   resource_id   = aws_api_gateway_resource.visitors_resource.id
@@ -118,7 +120,6 @@ resource "aws_api_gateway_deployment" "resume_api_deployment" {
   rest_api_id = aws_api_gateway_rest_api.resume_api.id
 
   # A special 'triggers' block is used to force a redeployment on any change
-  # to the API Gateway resources or methods.
   triggers = {
     redeployment = sha1(jsonencode([
       aws_api_gateway_resource.visitors_resource.id,

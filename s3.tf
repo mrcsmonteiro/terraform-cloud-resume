@@ -54,7 +54,7 @@ resource "aws_s3_bucket_policy" "resume_access" {
 
 # Upload all files from the local 'website' directory
 resource "aws_s3_object" "site_files" {
-  for_each = fileset("website/", "**/*")
+  for_each = toset([for filename in fileset("website/", "**/*") : filename if filename != "favicon.ico"])
 
   bucket = aws_s3_bucket.resume_bucket.id
   key    = each.value
