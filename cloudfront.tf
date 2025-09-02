@@ -10,11 +10,13 @@ resource "aws_cloudfront_origin_access_control" "static_site_oac" {
 }
 
 # CloudFront Distribution
-
 resource "aws_cloudfront_distribution" "s3_distribution" {
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"
+
+  # domain names CloudFront should respond to.
+  aliases = [var.domain_name]
 
   # Origin Configuration: Link the CloudFront distribution to the S3 bucket
   origin {
@@ -48,7 +50,8 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   # Viewer Certificate: Use the default CloudFront certificate
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = aws_acm_certificate_validation.resume_cert_validation.certificate_arn
+    ssl_support_method  = "sni-only"
   }
 
   # Add custom error responses for a more user-friendly experience

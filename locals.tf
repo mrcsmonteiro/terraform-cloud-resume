@@ -3,5 +3,5 @@ locals {
     Project = var.project
   }
 
-  bucket_name = "resume.992382373034"
+  bucket_name = "resume.891377289799.realhandsonlabs.net"
 }
