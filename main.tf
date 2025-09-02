@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "resume-bucket" {
-  bucket = "mms.211125568316.realhandsonlabs.net"
+  bucket = "BUCKET_NAME"
 
   tags = {
     Name        = "Name"
