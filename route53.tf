@@ -8,7 +8,7 @@ data "aws_route53_zone" "hosted_zone" {
 # The record is configured as an ALIAS to point to the CloudFront distribution.
 resource "aws_route53_record" "resume_alias" {
   zone_id = data.aws_route53_zone.hosted_zone.zone_id
-  name    = "resume.891377289799.realhandsonlabs.net."
+  name    = "resume.767397696128.realhandsonlabs.net."
   type    = "A"
 
   # The alias block is used to point to an AWS resource.

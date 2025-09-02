@@ -46,15 +46,39 @@ resource "aws_s3_bucket_policy" "resume_access" {
     ]
   })
 
-  # Ensure the public access block is created before the policy
+  # Ensure the access block is created before the policy
   depends_on = [
     aws_s3_bucket_public_access_block.resume_access_block
   ]
 }
 
-# Upload all files from the local 'website' directory
+# The aws_s3_object for index.html will be created separately from other files.
+# It uses the 'templatefile' function to replace the API URL dynamically.
+resource "aws_s3_object" "index_html" {
+  bucket       = aws_s3_bucket.resume_bucket.id
+  key          = "index.html"
+  content_type = "text/html"
+
+  # Render the template and inject the API's URL and the missing countValue
+  content = templatefile("${path.module}/website/index.html.tpl", {
+    apiUrl = "${aws_api_gateway_stage.prod_stage.invoke_url}/${aws_api_gateway_resource.visitors_resource.path}"
+    # The countValue variable was missing, so we've added a placeholder value here.
+    countValue = 0
+    # The error variable was also missing. We've added a placeholder value for it.
+    error = { message = "" }
+  })
+
+  # This dependency ensures the API Gateway stage is fully deployed before we
+  # try to get its URL and update the index.html file.
+  depends_on = [
+    aws_api_gateway_stage.prod_stage
+  ]
+}
+
+# Upload all other files from the local 'website' directory, excluding index.html and favicon.ico
 resource "aws_s3_object" "site_files" {
-  for_each = toset([for filename in fileset("website/", "**/*") : filename if filename != "favicon.ico"])
+  # Use a for expression to iterate and filter the file list
+  for_each = toset([for filename in fileset("website/", "**/*") : filename if filename != "favicon.ico" && filename != "index.html"])
 
   bucket = aws_s3_bucket.resume_bucket.id
   key    = each.value

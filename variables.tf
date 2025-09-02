@@ -13,11 +13,11 @@ variable "project" {
 variable "hosted_zone" {
   type        = string
   description = "Public hosted zone ID"
-  default     = "891377289799.realhandsonlabs.net."
+  default     = "767397696128.realhandsonlabs.net."
 }
 
 variable "domain_name" {
   type        = string
   description = "Cloud resume domain name"
-  default     = "resume.891377289799.realhandsonlabs.net"
+  default     = "resume.767397696128.realhandsonlabs.net"
 }
