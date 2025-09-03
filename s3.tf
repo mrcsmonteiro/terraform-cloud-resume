@@ -61,7 +61,7 @@ resource "aws_s3_object" "index_html" {
 
   # Render the template and inject the API's URL and the missing countValue
   content = templatefile("${path.module}/website/index.html.tpl", {
-    apiUrl = "${aws_api_gateway_stage.prod_stage.invoke_url}${trimprefix(aws_api_gateway_resource.visitors_resource.path, "/")}"
+    apiUrl = "${aws_api_gateway_stage.prod_stage.invoke_url}${aws_api_gateway_resource.visitors_resource.path}"
     # The countValue variable was missing, so we've added a placeholder value here.
     countValue = 0
     # The error variable was also missing. We've added a placeholder value for it.
