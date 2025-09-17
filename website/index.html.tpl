@@ -18,7 +18,7 @@
                     <div class="contact">
                         <p><strong>Mobile:</strong> 0410 052 509</p>
                         <p><strong>E-mail:</strong> <a href="mailto:mrcsmonteiro@gmail.com">mrcsmonteiro@gmail.com</a></p>
-                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marcosmsouza/" target="_blank" rel="noopener noreferrer">linkedin.com/in/marcosmsouza</a></p> </div>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marcosmsouza/" target="_blank" rel="noopener noreferrer">linkedin.com/in/marcosmsouza</a></p> </div>                        
                 </div>
             </header>
         <main>

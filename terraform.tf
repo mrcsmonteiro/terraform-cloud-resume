@@ -2,8 +2,8 @@ terraform {
   backend "s3" {
     bucket         = "tfstate-resume"
     key            = "terraform/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-lock-table"
+    region         = "ap-southeast-2"
+    dynamodb_table = "terraform-lock-table-resume"
     encrypt        = true
   }
 

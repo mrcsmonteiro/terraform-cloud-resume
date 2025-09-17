@@ -1,6 +1,12 @@
 variable "aws_region" {
   type        = string
-  description = "AWS region to use for resources."
+  description = "AWS region for resources"
+  default     = "ap-southeast-2"
+}
+
+variable "acm_region" {
+  type        = string
+  description = "AWS region for ACM certificate (must be us-east-1 for CloudFront)"
   default     = "us-east-1"
 }
 
@@ -13,13 +19,13 @@ variable "project" {
 variable "hosted_zone" {
   type        = string
   description = "Public hosted zone ID"
-  default     = "645443950967.realhandsonlabs.net."
+  default     = "marcosms.com.au."
 }
 
 variable "alias_hosted_zone" {
   type        = string
   description = "Public hosted zone ID"
-  default     = "resume.645443950967.realhandsonlabs.net."
+  default     = "resume.marcosms.com.au."
 }
 
 variable "sub_domain_name" {
@@ -31,5 +37,11 @@ variable "sub_domain_name" {
 variable "domain_name" {
   type        = string
   description = "Cloud resume domain name"
-  default     = "resume.645443950967.realhandsonlabs.net"
+  default     = "resume.marcosms.com.au"
+}
+
+variable "existing_acm_certificate_arn" {
+  description = "The ARN of existing ACM certificate for the domain."
+  type        = string
+  default     = "arn:aws:acm:us-east-1:460637121552:certificate/eabe8a0c-142d-4591-83d2-2ff6ba8c08e4"
 }

@@ -50,7 +50,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   # Viewer Certificate: Use the default CloudFront certificate
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate_validation.resume_cert_validation.certificate_arn
+    acm_certificate_arn = var.existing_acm_certificate_arn
     ssl_support_method  = "sni-only"
   }
 
