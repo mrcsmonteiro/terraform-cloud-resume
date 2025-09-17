@@ -1,0 +1,250 @@
+/* Web Fonts -------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../fonts/abolition-regular-webfont.eot');
+  src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/abolition-regular-webfont.woff') format('woff'),
+       url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* Base Styles ---------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: gray;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, .8);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 12px 0 0;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .8);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 0 .5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 .5em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin: 0 0 .5em;
+}
+
+/* General Styles ------------------------ */
+
+hr {
+    background-color: rgb(211, 211, 211);
+    height: 1px;
+    border: 0;
+    margin: 20px 0;
+}
+
+.text-blue-600 {
+    color: #2563eb;
+}
+
+.hover\:underline:hover {
+    text-decoration: underline;
+}
+
+.company-intro {
+  font-style: italic;
+  font-weight: normal;
+  line-height: normal;
+  font-size: small;
+}
+
+.job-details {
+  font-style: italic;
+  font-weight: normal;
+  line-height: normal;
+  font-size: small;
+}
+
+/* Layout Styles ------------------------ */
+
+.main-header {
+    line-height: .7em;
+    padding-top: 50px;
+    padding-bottom: 20px; /* Added padding to bottom */
+    margin-bottom: 30px;
+}
+
+.primary-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    background-color: #fff; /* White background for the main content area */
+    box-shadow: 0 0 20px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    padding-bottom: 40px; /* Add padding to the bottom of the main content */
+}
+
+.primary-content ul {
+    list-style-type: circle;
+}
+
+.address,
+.contact {
+  width: 45%; /* Adjusted width for better spacing */
+  float: left;
+  padding-top: 5px;
+}
+
+.address {
+  float: left;
+}
+
+.contact {
+  float: right; /* Changed to float right to position it opposite to address */
+  text-align: right; /* Align contact info to the right */
+}
+
+.main-footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #777;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+#back {
+    margin-top: 20px;
+}
+
+#back a {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+#back a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Visitor Count Appearance Improvements */
+.visitor-count-container {
+  text-align: center;
+  padding: 15px 20px; /* Increased padding for more breathing room */
+  border-radius: 10px; /* Slightly more rounded corners */
+  background-color: #f8f9fa; /* Lighter background for subtle contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow for depth */
+  color: #343a40; /* Darker text for better readability */
+  font-size: 1rem; /* Slightly larger font size */
+  font-weight: 600; /* Bolder font for emphasis */
+  margin: 30px auto; /* Center the block and add vertical margin */
+  max-width: 300px; /* Limit width for a cleaner look */
+  display: flex; /* Use flexbox for vertical alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  min-height: 50px; /* Ensure a minimum height */
+}
+
+/* Animation for loading state */
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.visitor-count-container .loading-text {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.visitor-count-container .loading-text,
+.visitor-count-container .error-text {
+  font-size: 1rem; /* Match the container's font size */
+  font-weight: 600;
+}
+
+.visitor-count-container .error-text {
+  color: #dc3545; /* A more distinct red for errors */
+}
+
+.visitor-count-container .count-value {
+    font-size: 1.2em; /* Make the number bigger */
+    color: #007bff; /* A distinct color for the count */
+    font-weight: 700;
+    margin-left: 5px; /* Space from the "Visitor Count" text */
+}
+
+/* Floats clear ------------------------- */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries ------------------------ */
+
+@media (max-width: 768px) {
+  .primary-content {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .address,
+  .contact {
+    width: 100%;
+    float: none;
+    text-align: left;
+  }
+
+  .contact {
+    margin-top: 15px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .certifications li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .date-range {
+      margin-left: 0;
+      margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-content {
+    width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+}
