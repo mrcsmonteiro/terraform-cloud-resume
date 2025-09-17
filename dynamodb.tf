@@ -20,4 +20,13 @@ resource "aws_dynamodb_table_item" "global_count" {
     id     = { S = "global_count" }
     visits = { N = "0" }
   })
+
+  # This lifecycle block prevents the item from being updated.
+  lifecycle {
+    # It tells Terraform to ignore changes to the 'item' attribute after the initial creation.
+    # The 'item' attribute contains the 'visits' count, which should be managed by the application.
+    ignore_changes = [
+      item
+    ]
+  }
 }
