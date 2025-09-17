@@ -4,6 +4,12 @@ variable "aws_region" {
   default     = "ap-southeast-2"
 }
 
+variable "aws_account_id" {
+  type        = string
+  description = "AWS account ID"
+  default     = "460637121552"
+}
+
 variable "acm_region" {
   type        = string
   description = "AWS region for ACM certificate (must be us-east-1 for CloudFront)"
