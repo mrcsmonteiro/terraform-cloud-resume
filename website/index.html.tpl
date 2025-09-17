@@ -9,7 +9,7 @@
         </head>
     <body>
         <div class="primary-content"><header id="top" class="main-header">
-                <h1>Marcos Monteiro de Souza</h1>
+                <h1>Marcos Monteiro</h1>
                 <div class="group"> <address class="address"> <p>16/195 Johnstone Street</p>
                         <p>Westmeadows VIC 3049</p>
                         <br>
