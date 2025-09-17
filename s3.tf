@@ -105,7 +105,8 @@ resource "null_resource" "invalidate_cloudfront_cache" {
   # S3 objects have been successfully created or updated.
   depends_on = [
     aws_s3_object.index_html,
-    aws_s3_object.site_files
+    aws_s3_object.site_files,
+    aws_cloudfront_distribution.s3_distribution
   ]
 
   # The local-exec provisioner runs the AWS CLI command to invalidate the cache.
