@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket         = "tfstate-resume"
-    key            = "terraform/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "terraform-lock-table"
-    encrypt        = true
+    bucket       = "tfstate-resume"
+    key          = "terraform/terraform.tfstate"
+    region       = "us-east-1"
+    use_lockfile = "terraform-lock-table"
+    encrypt      = true
   }
 
   required_providers {
