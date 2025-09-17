@@ -59,17 +59,14 @@ resource "aws_s3_object" "index_html" {
   key          = "index.html"
   content_type = "text/html"
 
-  # Render the template and inject the API's URL and the missing countValue
+  # Render the template and inject the API's URL
   content = templatefile("${path.module}/website/index.html.tpl", {
-    apiUrl = "${aws_api_gateway_stage.prod_stage.invoke_url}${aws_api_gateway_resource.visitors_resource.path}"
-    # The countValue variable was missing, so we've added a placeholder value here.
+    apiUrl     = "${aws_api_gateway_stage.prod_stage.invoke_url}${aws_api_gateway_resource.visitors_resource.path}"
     countValue = 0
-    # The error variable was also missing. We've added a placeholder value for it.
-    error = { message = "" }
+    error      = { message = "" }
   })
 
-  # This dependency ensures the API Gateway stage is fully deployed before we
-  # try to get its URL and update the index.html file.
+  # This dependency ensures the API Gateway stage is fully deployed before getting its URL and updating the index.html file.
   depends_on = [
     aws_api_gateway_stage.prod_stage
   ]
@@ -101,4 +98,18 @@ resource "aws_s3_object" "site_files" {
     split(".", each.value)[length(split(".", each.value)) - 1],
     "application/octet-stream"
   )
+}
+
+resource "null_resource" "invalidate_cloudfront_cache" {
+  # This depends_on block ensures the invalidation runs only after all
+  # S3 objects have been successfully created or updated.
+  depends_on = [
+    aws_s3_object.index_html,
+    aws_s3_object.site_files
+  ]
+
+  # The local-exec provisioner runs the AWS CLI command to invalidate the cache.
+  provisioner "local-exec" {
+    command = "aws cloudfront create-invalidation --distribution-id ${aws_cloudfront_distribution.s3_distribution.id} --paths '/*'"
+  }
 }
