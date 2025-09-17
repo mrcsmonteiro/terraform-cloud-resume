@@ -51,7 +51,9 @@ resource "aws_iam_role_policy" "github_actions_resume_policy" {
           "lambda:*",
           "apigateway:*",
           "s3:*",
-          "dynamodb:*"
+          "dynamodb:*",
+          "iam:GetOpenIDConnectProvider",
+          "iam:GetRole"
         ]
         Resource = "*"
       }
