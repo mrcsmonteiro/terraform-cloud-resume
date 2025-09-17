@@ -109,6 +109,12 @@ resource "null_resource" "invalidate_cloudfront_cache" {
     aws_cloudfront_distribution.s3_distribution
   ]
 
+  # This trigger forces a re-run whenever the hash of a file changes.
+  triggers = {
+    # This hash is calculated from the combined content of all files in the 'website' directory.
+    file_hashes = join("", [for file in fileset("${path.module}/website/", "**/*") : filemd5("${path.module}/website/${file}")])
+  }
+
   # The local-exec provisioner runs the AWS CLI command to invalidate the cache.
   provisioner "local-exec" {
     command = "aws cloudfront create-invalidation --distribution-id ${aws_cloudfront_distribution.s3_distribution.id} --paths '/*'"
