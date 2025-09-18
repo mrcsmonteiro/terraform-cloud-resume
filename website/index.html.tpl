@@ -196,7 +196,7 @@
                         <ul>
                             <li><a href="https://github.com/mrcsmonteiro/aws-k8s-terransible.git" target="_blank" rel="noopener noreferrer">AWS Terransible Kubernetes Cluster</a>: A fully automated deployment of a minimal viable Kubernetes cluster on AWS using Terraform and Ansible.</li>
                             <li><a href="https://github.com/mrcsmonteiro/terraform-cloud-resume.git" target="_blank" rel="noopener noreferrer">Cloud Resume</a>: Terraform code to deploy this Cloud Resume, which is hosted on AWS using Amazon S3, CloudFront, DynamoDB, API Gateway, and Lambda functions.</li>
-                            <li><a href="https://github.com/mrcsmonteiro/wiki-js-deployment.git" target="_blank" rel="noopener noreferrer">Wiki.js Deployment</a>: A simple low cost Terraform + Ansible deployment for a fully functional Wiki.js application hosted on a single EC2 instance.</li>
+                            <li><a href="https://github.com/mrcsmonteiro/wiki-js-deployment.git" target="_blank" rel="noopener noreferrer">Wiki.js Deployment</a>: A simple low cost Terraform + Ansible deployment for <a href="https://resume.marcosms.com.au/" target="_blank" rel="noopener noreferrer">this</a> fully functional Wiki.js application hosted on a single EC2 instance.</li>
                         </ul>
                     </nav>
             </section>
