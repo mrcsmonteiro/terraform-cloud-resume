@@ -20,6 +20,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     prefix = "static-site-logs/"
   }
 
+  depends_on = [
+    aws_s3_bucket_acl.cloudfront_logs_acl
+  ]
+
   # domain names CloudFront should respond to.
   aliases = [var.domain_name]
 
