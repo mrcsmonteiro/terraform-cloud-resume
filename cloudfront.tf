@@ -15,6 +15,11 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   is_ipv6_enabled     = true
   default_root_object = "index.html"
 
+  logging_config {
+    bucket = aws_s3_bucket.cloudfront_logs_bucket.bucket_regional_domain_name
+    prefix = "static-site-logs/"
+  }
+
   # domain names CloudFront should respond to.
   aliases = [var.domain_name]
 

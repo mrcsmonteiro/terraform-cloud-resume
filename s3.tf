@@ -1,3 +1,44 @@
+resource "aws_s3_bucket" "cloudfront_logs_bucket" {
+  bucket = "${local.bucket_name}-logs"
+  tags   = local.common_tags
+}
+
+resource "aws_s3_bucket_public_access_block" "cloudfront_logs_access_block" {
+  bucket                  = aws_s3_bucket.cloudfront_logs_bucket.id
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
+resource "aws_s3_bucket_acl" "cloudfront_logs_acl" {
+  bucket = aws_s3_bucket.cloudfront_logs_bucket.id
+  acl    = "log-delivery-write" # This is a predefined ACL that grants write permission to the log delivery group
+}
+
+resource "aws_s3_bucket_policy" "cloudfront_logs_policy" {
+  bucket = aws_s3_bucket.cloudfront_logs_bucket.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "CloudFrontLogDeliveryAccess"
+        Effect = "Allow"
+        Principal = {
+          Service = "delivery.logs.amazonaws.com"
+        }
+        Action   = "s3:PutObject"
+        Resource = "${aws_s3_bucket.cloudfront_logs_bucket.arn}/*"
+        Condition = {
+          StringEquals = {
+            "s3:x-amz-acl" = "bucket-owner-full-control"
+          }
+        }
+      }
+    ]
+  })
+}
+
 resource "aws_s3_bucket" "resume_bucket" {
   bucket = local.bucket_name
   tags   = local.common_tags
