@@ -53,6 +53,7 @@ resource "aws_iam_role_policy" "github_actions_resume_policy" {
           "s3:*",
           "dynamodb:*",
           "iam:*",
+          "glue:*",
           "athena:*"
         ]
         Resource = "*"
