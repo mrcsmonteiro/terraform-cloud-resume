@@ -51,3 +51,9 @@ variable "existing_acm_certificate_arn" {
   type        = string
   default     = "arn:aws:acm:us-east-1:460637121552:certificate/eabe8a0c-142d-4591-83d2-2ff6ba8c08e4"
 }
+
+variable "log_prefix" {
+  type        = string
+  description = "Prefix for CloudFront logs in S3 bucket"
+  default     = "static-site-logs/"
+}
