@@ -25,22 +25,17 @@
             <section class="summary">
                 <h2>Professional Summary</h2>
                 <hr>
-                <p>Highly experienced IT professional with a proven track record in multinational companies like Santander Bank, IBM, and ME Bank. My expertise spans Cloud Computing, DevOps practices, and Data Center Operations, with a strong foundation in Workload Automation, Middleware, and Data Protection. I possess a keen interest in AWS, Kubernetes, and Infrastructure as Code (IaC), underscored by my AWS Solutions Architect Professional, AWS DevOps Engineer Professional, and Kubernetes Certified Administrator (CKA) certifications. I am committed to leveraging continuous learning to drive efficient and scalable cloud and platform solutions.</p>
+                <p>Cloud and DevOps Engineer with 10+ years architecting, automating, and supporting scalable cloud, hybrid, and on-premises IT infrastructure for financial services and tech companies. Specialized in Infrastructure as Code, tooling, CI/CD pipelines, Kubernetes, and cloud migration, with a proven track record reducing manual efforts, accelerating deployments, and achieving 99.9% system reliability.</p>
 
-                <h2>Skills Summary</h2>
+                <h2>Core Competencies</h2>
                 <hr>
                     <ul>
                         <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
-                        <li><strong>Infrastructure as Code (IaC):</strong> AWS CloudFormation, Terraform, Ansible</li>
-                        <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes (CKA Certified)</li>
-                        <li><strong>Operating Systems:</strong> Linux Distributions (Red Hat, CentOS, SUSE, Debian, Ubuntu), UNIX, Windows</li>
-                        <li><strong>Programming/Scripting:</strong> Python, Shell Script (bash/ksh), HTML, JSON, YAML, Node.js</li>
-                        <li><strong>Databases:</strong> DB2, MS SQL Server, MySQL, Oracle</li>
-                        <li><strong>Monitoring & Logging:</strong> AWS CloudWatch, AWS CloudTrail, AppDynamics</li>
-                        <li><strong>Automation & CI/CD:</strong> BMC Control-M/EM, Jenkins, Git</li>
-                        <li><strong>Security:</strong> Network Security (Firewalls, VPNs), IAM, Encryption, Access Control, Security Assessments</li>
-                        <li><strong>IT Methodologies:</strong> Agile, ITIL V3</li>
-                        <li><strong>Other Tools:</strong> xMatters, Asana, Google Sheets/Docs</li>
+                        <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes (KCNA, CKAD, CKA)</li>
+                        <li><strong>Infrastructure as Code:</strong> AWS CloudFormation, Terraform, Ansible</li>
+                        <li><strong>Operating Systems:</strong> Linux, Unix, Windows</li>
+                        <li><strong>Scripting:</strong> Python, Shell Script, PowerShell</li>
+                        <li><strong>Automation & CI/CD:</strong> BMC Control-M, Jenkins, GitHub Actions</li>
                     </ul>
             </section>
 
@@ -49,71 +44,40 @@
                 <hr>
                 <div id="pluralsight">
                     <h3>Pluralsight</h3>
-                    <p class="experience-dates">2020 – 2025</p> <p class="company-intro">Pluralsight is an American online education company that offers a variety of video and hands-on training courses for software developers, IT administrators, and creative professionals through its website. The company has 1,500+ expert authors, 1,700+ employees, is headquartered in Utah, and is trusted by 70% of the Fortune 500 companies, which represents more than 17,700 business accounts.</p>
+                    <p class="company-intro">Pluralsight is an American online education company that offers a variety of video and hands-on training courses for software developers, IT administrators, and creative professionals through its website. The company has 1,500+ expert authors, 1,700+ employees, is headquartered in Utah, and is trusted by 70% of the Fortune 500 companies, which represents more than 17,700 business accounts.</p>
 
-                    <h4>Senior Content Performance Analyst</h4>
-                    <p class="job-details">Full-time – Melbourne (remote), Australia [2024 - 2025]</p>
+                    <h4>Senior Cloud DevOps Engineer - (Content Platform)</h4>
+                    <p class="job-details">Full-time – Melbourne (remote), Australia [2020 - 2025]</p>
                         <ul>
-                            <li>Applied advanced analytical and prompt engineering techniques, including ChatGPT, to clean course syllabus, summarize audit insights, and analyze student feedback, contributing to content optimization</li>
-                            <li>Evaluated and tested AWS, Azure, GCP, Linux and DevOps hands-on labs for functionality, accuracy, and relevance, ensuring high-quality technical content delivery</li>
-                            <li>Refined and enhanced audit processes to ensure the delivery of high-quality, actionable insights for curriculum improvements</li>
-                            <li>Earned sustained leadership recognition, with consistent acknowledgment across multiple quarters for quality of work, process ownership, and learner impact</li>
-                        </ul>
-
-                    <h4>Content Remediation Engineer (A Cloud Guru)</h4>
-                    <p class="job-details">Full-time – Melbourne (remote), Australia [2021 - 2024]</p>
-                        <ul>
-                            <li>Received and resolved escalations related to hands-on lab templates (Infrastructure as Code), user data scripts, video lessons, lab guides, and practice exams within Cloud (AWS, Azure, GCP)/DevOps/Linux domains</li>
-                            <li>Liaised extensively with cross-functional teams, including Technical Writers, Video Editors, Project Managers, and DevOps Engineers, to address complex content issues requiring multi-team engagement</li>
-                            <li>Led efforts to return problematic content to a working, effective state, with meticulous attention to detail and an unwavering commitment to platform excellence</li>
-                            <li>Developed and maintained Confluence knowledge base procedures and best practices for efficient content remediation, improving team efficiency</li>
-                            <li>Earned the “CKA: Certified Kubernetes Administrator” certification through a company-wide challenge, and received an award for commitment to continuous learning and embodying Pluralsight's mission and values</li>
-                            <li>Positively influenced team culture, recognized repeatedly for professionalism, positive attitude, and living the company values daily</li>
-                        </ul>
-
-                    <h4>Senior Content Support Manager (A Cloud Guru)</h4>
-                    <p class="job-details">Full-time – Melbourne (remote), Australia [2020 - 2021]</p>
-                        <ul>
-                            <li>Provided timely and accurate resolution for A Cloud Guru and Linux Academy content-related concerns and student content support inquiries</li>
-                            <li>Collaborated on the review and creation of quiz questions and answers used across tech foundations and executive briefing courses, covering topics like automation, data, blockchain, platforms, and cloud computing</li>
-                            <li>Addressed DevOps, Cloud Computing (AWS, Azure, Google Cloud), and Linux content issues raised by students for the A Cloud Guru and legacy Linux Academy platforms, consolidating feedback data through automated workflows via Zapier, Google Sheets, and Zendesk</li>
-                            <li>Guided students on hands-on activities by reviewing AWS, Azure, and Google Cloud sandbox policies with the engineering team to clarify allowed resources</li>
+                            <li>Led cross-functional remediation of 500+ high-priority content issues across hands-on labs, cloud sandboxes, video lessons, and practice exams, ensuring platform excellence for Fortune 500 customers and supporting 2M+ learners globally</li>
+                            <li>Optimized content performance by applying advanced analytical techniques and prompt engineering to analyze student feedback, summarize audit insights, and refine course outlines</li>
+                            <li>Managed the end-to-end quality process, including validation and maintenance of Infrastructure as Code (IaC) lab templates (CloudFormation, Terraform, ARM) and user data scripts for functionality and technical accuracy</li>
+                            <li>Achieved the “CKA: Certified Kubernetes Administrator” certification through a company-wide challenge, and received an award for commitment to continuous learning and embodying Pluralsight's mission and values</li>
+                            <li>Created and maintained Confluence knowledge base procedures and best practices for efficient content remediation, improving team efficiency</li>
+                            <li>Restored and modernized deprecated DevOps content (Linux, Jenkins, Ansible, Terraform, etc.) from legacy platforms, ensuring quality control and seamless student experience</li>
                         </ul>
                 </div>
 
                 <div id="mebank">
                     <h3>ME Bank</h3>
-                    <p class="experience-dates">2017 – 2020</p>
 
                     <p class="company-intro">ME Bank is an Australian direct bank based in Melbourne, Victoria. ME Bank also has offices in Sydney, Brisbane, Adelaide, Perth, Hobart, Canberra, and Darwin.
                     Industry super fund-owned bank, ME has a staff of 1,800 employees and has reported an underlying net profit after tax (NPAT) of AU$99.8 million for FY2019.</p>
 
                     <h4>Cloud Engineer</h4>
-                    <p class="job-details">Full-time – Melbourne (on-site), Australia [2019 - 2020]</p>
+                    <p class="job-details">Full-time – Melbourne (on-site), Australia [2017 - 2020]</p>
                         <ul>
-                            <li>Designed, built, and managed core AWS infrastructure services (IAM, EC2, S3, VPC, RDS, DynamoDB, Lambda, Route 53, Transit Gateway) to enable business units to adopt cloud solutions, significantly reducing time to market</li>
-                            <li>Automated cloud infrastructure provisioning and management using AWS CloudFormation, ensuring adherence to internal standards, and reducing deployment inconsistencies</li>
-                            <li>Implemented robust cloud security measures, including PrivateLink endpoints to allow secure on-premises to AppDynamics SaaS controllers without traversing the Internet</li>
-                            <li>Designed and deployed a fully managed, highly available AWS SFTP solution for secure file transfers between on-premises and cloud systems, leveraging CloudFormation templates for repeatable deployments</li>
-                            <li>Contributed to a project to templatize Transit Gateway configurations, replacing manual "ClickOps" with CloudFormation templates, improving infrastructure management and reducing risk of deployment inconsistencies</li>
-                            <li>Automated CI/CD workflows and enabled deployment approval actions from Slack channels, using Bitbucket Data Center, xMatters, AWS CodeBuild, AWS CodeDeploy, AWS CodePipeline, and Lambda functions</li>
-                            <li>Provided recommendations for cost-effective cloud architecture and resource scaling</li>
-                        </ul>
-
-                    <h4>Application Support Analyst</h4>
-                    <p class="job-details">Full-time – Melbourne (on-site), Australia [2017 - 2019]</p>
-                        <ul>
-                            <li>Provided Level 2 & 3 application support for critical business functions on a 24x7 basis, maximizing up-time, stability, and performance of Cards and Payment platforms</li>
-                            <li>Conducted Root-Cause Analysis (RCA) for service requests, alerts, incidents, and problems, implementing effective resolutions</li>
-                            <li>Implemented an automated workflow to gather key Control-M metrics, convert data to .csv, and import into SQL database, enabling performance tracking via custom reports</li>
-                            <li>Created AppDynamics dashboards and an automated managerial report with performance indicators for microservices, enhancing system visibility</li>
-                            <li>Won “IT quarterly award 2018” for demonstrating one of the ME’s values – “Have a swing: Just get going. Don’t hesitate, make things happen, make every day count. Push yourself to do more than you’ve ever done before”</li>
+                            <li>Designed, built, and managed core AWS infrastructure (IAM, EC2, S3, VPC, RDS, Lambda) using AWS CloudFormation to replace manual processes and accelerate time-to-market, from weeks to hours</li>
+                            <li>Strengthened security posture by implementing secure network architectures, including PrivateLink for secure SaaS connectivity and a highly available AWS SFTP solution for reliable file transfers</li>
+                            <li>Automated CI/CD workflows and deployment approvals via Bitbucket, CodePipeline, and xMatters/Slack integration, improving governance and release velocity from hours to minutes</li>
+                            <li>Provided 24x7 Level 2/3 support for critical Cards and Payments platforms, leveraging Root-Cause Analysis and AppDynamics monitoring to ensure stability and service continuity</li>
+                            <li>Delivered proof-of-concept SIEM dashboards to enhance security monitoring and provided cost-optimization recommendations for cloud infrastructure</li>
+                            <li>Won “IT Quarterly Award 2018” for demonstrating one of the ME’s values – “Have a swing: Just get going. Don’t hesitate, make things happen, make every day count. Push yourself to do more than you’ve ever done before”</li>
                         </ul>
                 </div>
 
                 <div id="ibm">
                     <h3>IBM</h3>
-                    <p class="experience-dates">2015 – 2016</p>
 
                     <p class="company-intro">IBM is an American multinational technology company with operations in over 170 countries. It has a staff of 380k employees and an annual turnover of US$79 billion. Decision Group is a strategic IBM business partner in Brazil and provides IT services in HR management, projects and consulting.</p>
 
@@ -130,7 +94,6 @@
 
                 <div id="tivit">
                     <h3>TIVIT</h3>
-                    <p class="experience-dates">2014 – 2015</p>
 
                     <p class="company-intro">TIVIT is the leading Latin American technology solutions company and provides services to 35 countries around the world. It has a staff of 7k employees and an estimated annual turnover of US$5 million. Conquest One is a Brazilian company that provides staffing and IT outsourcing services through qualified professionals.</p>
 
@@ -145,7 +108,7 @@
 
                 <div id="santander">
                     <h3>Santander Bank</h3>
-                    <p class="experience-dates">2001 – 2014</p>
+
                     <p class="company-intro">Santander is the 5th largest commercial bank in Brazil by assets with a staff of over 50k employees and an annual turnover of US$23 billion. G&P and Coopersite are Brazilian IT outsourcing providers and Santander’s business partners. Produban is a Santander’s technology company which specializes in the continuous design and operation of IT infrastructures.</p>
 
                     <h4>Production Analyst</h4>
@@ -196,7 +159,7 @@
                         <ul>
                             <li><a href="https://github.com/mrcsmonteiro/aws-k8s-terransible.git" target="_blank" rel="noopener noreferrer">AWS Terransible Kubernetes Cluster</a>: A fully automated deployment of a minimal viable Kubernetes cluster on AWS using Terraform and Ansible.</li>
                             <li><a href="https://github.com/mrcsmonteiro/terraform-cloud-resume.git" target="_blank" rel="noopener noreferrer">Cloud Resume</a>: Terraform code to deploy this Cloud Resume, which is hosted on AWS using Amazon S3, CloudFront, DynamoDB, API Gateway, and Lambda functions.</li>
-                            <li><a href="https://github.com/mrcsmonteiro/wiki-js-deployment.git" target="_blank" rel="noopener noreferrer">Wiki.js Deployment</a>: A simple low cost Terraform + Ansible deployment for <a href="https://wiki.marcosms.com.au/" target="_blank" rel="noopener noreferrer">this</a> fully functional Wiki.js application hosted on a single EC2 instance.</li>
+                            <li><a href="https://github.com/mrcsmonteiro/wiki-js-deployment.git" target="_blank" rel="noopener noreferrer">Wiki.js Deployment</a>: A simple low cost Terraform + Ansible deployment for a fully functional Wiki.js application hosted on a single EC2 instance.</li>
                         </ul>
                     </nav>
             </section>
@@ -206,6 +169,7 @@
                 <hr>
                     <nav>
                         <ul>
+                            <li><a href="https://www.credly.com/badges/52b49da7-ce0b-4c19-b4f2-1a5ddb6ce562/public_url" target="_blank" rel="noopener noreferrer">CKAD: Certified Kubernetes Application Developer</a></li>
                             <li><a href="https://www.credly.com/badges/35940559-d806-4c14-9e4d-6fc7c15987af/public_url" target="_blank" rel="noopener noreferrer">KCNA: Kubernetes and Cloud Native Associate</a></li>                            
                             <li><a href="https://www.credly.com/badges/2d0b2699-78a8-4d71-b3ae-24513388fe47/public_url" target="_blank" rel="noopener noreferrer">AWS Certified AI Practitioner</a></li>
                             <li><a href="https://www.credly.com/badges/8d2b419a-765a-46ba-9017-06df84ded793/public_url" target="_blank" rel="noopener noreferrer">LPIC-3 Virtualization and Containerization Certification</a></li>
