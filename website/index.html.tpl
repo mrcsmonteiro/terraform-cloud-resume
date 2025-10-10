@@ -169,6 +169,7 @@
                 <hr>
                     <nav>
                         <ul>
+                            <li><a href="https://www.credly.com/badges/4029c013-1456-4edc-8b1f-042d1960c783/public_url" target="_blank" rel="noopener noreferrer">KCSA: Kubernetes and Cloud Native Security Associate</a></li>
                             <li><a href="https://www.credly.com/badges/52b49da7-ce0b-4c19-b4f2-1a5ddb6ce562/public_url" target="_blank" rel="noopener noreferrer">CKAD: Certified Kubernetes Application Developer</a></li>
                             <li><a href="https://www.credly.com/badges/35940559-d806-4c14-9e4d-6fc7c15987af/public_url" target="_blank" rel="noopener noreferrer">KCNA: Kubernetes and Cloud Native Associate</a></li>                            
                             <li><a href="https://www.credly.com/badges/2d0b2699-78a8-4d71-b3ae-24513388fe47/public_url" target="_blank" rel="noopener noreferrer">AWS Certified AI Practitioner</a></li>
