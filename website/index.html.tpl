@@ -10,9 +10,8 @@
     <body>
         <div class="primary-content"><header id="top" class="main-header">
                 <h1>Marcos Monteiro de Souza</h1>
-                <div class="group"> <address class="address"> <p>16/195 Johnstone Street</p>
-                        <p>Westmeadows VIC 3049</p>
-                        <br>
+                <div class="group"> <address class="address">
+                        <p>Melbourne VIC</p>
                         <p>Australian Citizen</p>
                     </address>
                     <div class="contact">
@@ -25,17 +24,17 @@
             <section class="summary">
                 <h2>Professional Summary</h2>
                 <hr>
-                <p>Cloud and DevOps Engineer with 10+ years architecting, automating, and supporting scalable cloud, hybrid, and on-premises IT infrastructure for financial services and tech companies. Specialized in Infrastructure as Code, tooling, CI/CD pipelines, Kubernetes, and cloud migration, with a proven track record reducing manual efforts, accelerating deployments, and achieving 99.9% system reliability.</p>
+                <p>Cloud and DevOps Engineer with 10+ years delivering automated, scalable infrastructure solutions that reduce deployment times from weeks to hours and cut operational overhead by up to 90%. Proven track record architecting cloud-native systems for financial services and Fortune 500 tech platforms, with expertise in Infrastructure as Code, Kubernetes orchestration, and CI/CD automation. Achieved near-perfect system availability while maintaining 2M+ learner environments and critical banking platforms through strategic automation and performance optimization.</p>
 
                 <h2>Core Competencies</h2>
                 <hr>
                     <ul>
                         <li><strong>Cloud Platforms:</strong> AWS, Azure, GCP</li>
-                        <li><strong>Containerization & Orchestration:</strong> Docker, Kubernetes (KCNA, CKAD, CKA)</li>
+                        <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes (KCNA, KCSA, CKAD, CKA)</li>
                         <li><strong>Infrastructure as Code:</strong> AWS CloudFormation, Terraform, Ansible</li>
                         <li><strong>Operating Systems:</strong> Linux, Unix, Windows</li>
-                        <li><strong>Scripting:</strong> Python, Shell Script, PowerShell</li>
-                        <li><strong>Automation & CI/CD:</strong> BMC Control-M, Jenkins, GitHub Actions</li>
+                        <li><strong>Scripting & Development:</strong> Python, Shell Script, PowerShell, YAML, JSON</li>
+                        <li><strong>Automation & CI/CD:</strong> BMC Control-M, Jenkins, GitHub Actions, AWS CodePipeline</li>
                     </ul>
             </section>
 
@@ -46,15 +45,14 @@
                     <h3>Pluralsight</h3>
                     <p class="company-intro">Pluralsight is an American online education company that offers a variety of video and hands-on training courses for software developers, IT administrators, and creative professionals through its website. The company has 1,500+ expert authors, 1,700+ employees, is headquartered in Utah, and is trusted by 70% of the Fortune 500 companies, which represents more than 17,700 business accounts.</p>
 
-                    <h4>Senior Cloud DevOps Engineer - (Content Platform)</h4>
+                    <h4>Senior Cloud DevOps Engineer</h4>
                     <p class="job-details">Full-time – Melbourne (remote), Australia [2020 - 2025]</p>
                         <ul>
-                            <li>Led cross-functional remediation of 500+ high-priority content issues across hands-on labs, cloud sandboxes, video lessons, and practice exams, ensuring platform excellence for Fortune 500 customers and supporting 2M+ learners globally</li>
-                            <li>Optimized content performance by applying advanced analytical techniques and prompt engineering to analyze student feedback, summarize audit insights, and refine course outlines</li>
-                            <li>Managed the end-to-end quality process, including validation and maintenance of Infrastructure as Code (IaC) lab templates (CloudFormation, Terraform, ARM) and user data scripts for functionality and technical accuracy</li>
-                            <li>Achieved the “CKA: Certified Kubernetes Administrator” certification through a company-wide challenge, and received an award for commitment to continuous learning and embodying Pluralsight's mission and values</li>
-                            <li>Created and maintained Confluence knowledge base procedures and best practices for efficient content remediation, improving team efficiency</li>
-                            <li>Restored and modernized deprecated DevOps content (Linux, Jenkins, Ansible, Terraform, etc.) from legacy platforms, ensuring quality control and seamless student experience</li>
+                            <li>Recovered 80% of deprecated Cloud and DevOps hands-on labs, extending shelf life of hundreds of Linux Academy and A Cloud Guru interactive activities through systematic remediation, preventing content loss and maintaining catalog relevance</li>
+                            <li>Resolved 500+ critical content issues across cloud sandboxes, IaC templates (CloudFormation, Terraform, ARM), and practice exams, ensuring seamless learning experiences for Fortune 500 customers</li>
+                            <li>Earned CKA certification through company-wide challenge, receiving award for embodying continuous learning and Pluralsight mission</li>
+                            <li>Optimized content quality workflows using advanced analytical techniques and prompt engineering to analyze student feedback, generating actionable insights that improved course relevance</li>
+                            <li>Built comprehensive Confluence knowledge base documenting remediation best practices, accelerating team onboarding and standardizing quality processes</li>
                         </ul>
                 </div>
 
@@ -67,12 +65,16 @@
                     <h4>Cloud Engineer</h4>
                     <p class="job-details">Full-time – Melbourne (on-site), Australia [2017 - 2020]</p>
                         <ul>
-                            <li>Designed, built, and managed core AWS infrastructure (IAM, EC2, S3, VPC, RDS, Lambda) using AWS CloudFormation to replace manual processes and accelerate time-to-market, from weeks to hours</li>
-                            <li>Strengthened security posture by implementing secure network architectures, including PrivateLink for secure SaaS connectivity and a highly available AWS SFTP solution for reliable file transfers</li>
-                            <li>Automated CI/CD workflows and deployment approvals via Bitbucket, CodePipeline, and xMatters/Slack integration, improving governance and release velocity from hours to minutes</li>
-                            <li>Provided 24x7 Level 2/3 support for critical Cards and Payments platforms, leveraging Root-Cause Analysis and AppDynamics monitoring to ensure stability and service continuity</li>
-                            <li>Delivered proof-of-concept SIEM dashboards to enhance security monitoring and provided cost-optimization recommendations for cloud infrastructure</li>
-                            <li>Won “IT Quarterly Award 2018” for demonstrating one of the ME’s values – “Have a swing: Just get going. Don’t hesitate, make things happen, make every day count. Push yourself to do more than you’ve ever done before”</li>
+                            <li>Reduced infrastructure deployment time from weeks to hours by implementing AWS CloudFormation templates for IAM, EC2, S3, VPC, RDS, Lambda, replacing manual processes with repeatable IaC patterns</li>
+                            <li>Accelerated CI/CD release velocity from hours to minutes through automated deployment approvals via Bitbucket, CodePipeline, and xMatters/Slack integration, improving governance without sacrificing speed</li>
+                            <li>Won "IT Quarterly Award 2018" for demonstrating ME Bank's "Have a swing" value, driving initiatives that accelerated results and exceeded expectations</li>
+                            <li>Secured SaaS connectivity by implementing PrivateLink endpoints for AppDynamics controllers, eliminating internet-exposed traffic and meeting compliance requirements</li>
+                            <li>Enabled data-driven performance insights by automating Control-M metrics collection and SQL database integration, powering custom reports for Enterprise Data team</li>
+                            <li>Maximized direct connect uptime by implementing CloudWatch composite alarms for proactive link monitoring and automated alerting</li>
+                            <li>Delivered highly available SFTP solution using CloudFormation for secure file transfers between on-premises and cloud, ensuring business continuity for critical data flows</li>
+                            <li>Eliminated manual "ClickOps" by templatizing Transit Gateway configurations with CloudFormation, reducing configuration drift across multi-account environments</li>
+                            <li>Reduced incident response time through AppDynamics dashboard creation and automated managerial reports with microservices performance indicators</li>
+                            <li>Conducted root-cause analysis for Level 2/3 incidents on 24x7 basis, implementing preventive measures that reduced recurring issues</li>
                         </ul>
                 </div>
 
