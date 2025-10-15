@@ -204,7 +204,7 @@
                 <hr>
                     <ul>
                         <li>Portuguese (Brazil): Native speaker</li>
-                        <li>English: Full professional proficiency (IELTS – 7.5 – 2015)</li>
+                        <li>English: Full professional proficiency</li>
                         <li>French: Elementary proficiency</li>
                         <li>Spanish: Elementary proficiency</li>
                         <li>Chinese: Beginner (HSK 1)</li>
