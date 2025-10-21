@@ -70,7 +70,7 @@
                             <li>Won "IT Quarterly Award 2018" for demonstrating ME Bank's "Have a swing" value, driving initiatives that accelerated results and exceeded expectations</li>
                             <li>Secured SaaS connectivity by implementing PrivateLink endpoints for AppDynamics controllers, eliminating internet-exposed traffic and meeting compliance requirements</li>
                             <li>Enabled data-driven performance insights by automating Control-M metrics collection and SQL database integration, powering custom reports for Enterprise Data team</li>
-                            <li>Maximized direct connect uptime by implementing CloudWatch composite alarms for proactive link monitoring and automated alerting</li>
+                            <li>Resolved critical alert fatigue by engineering a CloudWatch Composite Alarm across redundant AWS Direct Connect links, eliminating 90%+ false positives</li>
                             <li>Delivered highly available SFTP solution using CloudFormation for secure file transfers between on-premises and cloud, ensuring business continuity for critical data flows</li>
                             <li>Eliminated manual "ClickOps" by templatizing Transit Gateway configurations with CloudFormation, reducing configuration drift across multi-account environments</li>
                             <li>Reduced incident response time through AppDynamics dashboard creation and automated managerial reports with microservices performance indicators</li>
